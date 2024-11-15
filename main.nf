@@ -10,7 +10,7 @@ params.input_file = "data/greetings.csv"
  */
 process sayHello {
 
-    publishDir 'results', mode: 'copy'
+    publishDir "${params.outdir}", mode: 'copy'
 
     input:
         val greeting
@@ -29,7 +29,7 @@ process sayHello {
  */
 process convertToUpper {
 
-    publishDir 'results', mode: 'copy'
+    publishDir "${params.outdir}", mode: 'copy'
 
     input:
         path input_file
