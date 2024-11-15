@@ -1,4 +1,4 @@
-# nf-hello-genomics
+# nf-hello-world
 
 Welcome to the **nf-hello-world** repository! This is a demonstration pipeline built using [Nextflow](https://www.nextflow.io/), designed to showcase a basic 'hello world' workflow. The pipeline is ideal for demonstrating how to handle input and output files via channels and pass them between processes effectively.
 
@@ -27,7 +27,7 @@ nextflow run seqeralabs/nf-hello-world -profile demo
 If you wish you can manually supply your own parameters using command line options. These are the defaults specified from the root of the repository:
 
 ```bash
-nextflow run seqeralabs/nf-hello-genomics \
+nextflow run seqeralabs/nf-hello-world \
     --input_file "./data/greetings.csv"
 ```
 
