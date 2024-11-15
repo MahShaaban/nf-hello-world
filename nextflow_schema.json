@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com//master/nextflow_schema.json",
+  "title": " pipeline parameters",
+  "description": "",
+  "type": "object",
+  "definitions": {
+    "parameters": {
+      "title": "Parameters",
+      "type": "object",
+      "description": "Parameters for nf-hello-world pipeline",
+      "default": "",
+      "properties": {
+        "reads_bam": {
+          "type": "string",
+          "description": "Path to greetings file (.csv)",
+          "format": "path"
+        },
+        "outdir": {
+          "type": "string",
+          "description": "Output directory to write results to.",
+          "default": "results",
+          "format": "path"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/parameters"
+    }
+  ]
+}

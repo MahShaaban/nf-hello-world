@@ -1,0 +1,3 @@
+reports:
+  "**/UPPER*.txt":
+    display: "Uppercased greetings"
