@@ -11,7 +11,7 @@
       "description": "Parameters for nf-hello-world pipeline",
       "default": "",
       "properties": {
-        "reads_bam": {
+        "input_file": {
           "type": "string",
           "description": "Path to greetings file (.csv)",
           "format": "path"
